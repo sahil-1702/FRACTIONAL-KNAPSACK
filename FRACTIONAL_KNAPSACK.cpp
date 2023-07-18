@@ -1,5 +1,3 @@
-#include<bits/stdc++.h>
-using namespace std;
 
 
 
@@ -8,7 +6,7 @@ using namespace std;
     }
 
 
-double fun1 (vector<pair<int, int>>& items, int n, int target)
+double function1 (vector<pair<int, int>>& items, int n, int target)   //TC-O(NLON)     SC-O(N)
 {
     vector<pair<double,pair<int,int>>>v;
     for(int i=0;i<n;i++){
@@ -45,7 +43,7 @@ bool cmp2 (pair<int, int> &a, pair<int, int> &b) {
     return (1.0*a.second/a.first*1.0) > (1.0*b.second/b.first*1.0);
 }
 
-double fun2 (vector<pair<int, int>>& items, int n, int w)
+double function2 (vector<pair<int, int>>& items, int n, int w)    //TC-O(NLOGN)       SC-O(1)
 {
     sort(items.begin(), items.end(), &cmp2);
     double ans = 0;
@@ -61,15 +59,5 @@ double fun2 (vector<pair<int, int>>& items, int n, int w)
 }
         
 
-int main(){
-    int t;
-    cin>>t;
-    while(t--){
-    int n,target;
-    cin>>n>>target;
-    vector<int>value(n);
-    vector<int>weight(n);
-    
-    }
-}
+
 
